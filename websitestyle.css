@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #005f73; /* Dark Teal */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1; /* Ensures the navigation takes up remaining space */
+    display: flex;
+    justify-content: flex-end; /* Aligns the navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Displays list items in a row */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac); /* Gradient Pink Shades */
+    color: #2b2d42; /* Dark Gray */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: #d3d3d3; /* Light Gray */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 5px 0;
+    font-weight: bold;
+    min-height: 100px; /* Ensures boxes are visible */
+}
+
+.outer-box {
+    background-color: #d3d3d3; /* Light Gray */
+    height: 50px;
+    margin: 5px 0;
+    border: 1px solid black;
+}

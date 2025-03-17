@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(219, 163, 197);
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    background-color: brown;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo{
+    color: aquamarine;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration:underline; 
+    color: black;
+}
+
+.Slides {
+    display: flex;
+    width: 300%;  /* 5 images */
+    height: 50%;
+    animation: slideAnimation 15s infinite linear;
+}
+
+.Slides img {
+    width: 30%;
+    height: auto;
+}
+
+/* Animation for sliding effect */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}

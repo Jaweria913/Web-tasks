@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="web lab 4 task 1 style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Outer Structure -->
+        <div class="row">
+            <div class="col-12 outer-box"></div> <!-- Top Header -->
+        </div>
+
+        <div class="row">
+            <div class="col-2 outer-box"></div> <!-- Left Sidebar -->
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12 box">Box 1</div> <!-- Center Top Box -->
+                </div>
+                <div class="row">
+                    <div class="col-4 box">Box 2</div>
+                    <div class="col-4 box">Box 3</div>
+                    <div class="col-4 box">Box 4</div>
+                    <div class="col-4 box">Box 5</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 box">Box 6</div>
+                    <div class="col-6 box">Box 7</div>
+                </div>
+            </div>
+            <div class="col-2 outer-box"></div> <!-- Right Sidebar -->
+        </div>
+
+        <div class="row">
+            <div class="col-12 outer-box"></div> <!-- Bottom Footer -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

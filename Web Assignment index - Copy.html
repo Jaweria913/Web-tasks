@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Responsive Educational Website</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web assignment style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#home">EduLearn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><button class="btn btn-light ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button></li>
+                    <li class="nav-item"><button class="btn btn-warning ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section text-white text-center">
+        <div class="container">
+            <h1>Welcome to EduLearn</h1>
+            <p>Explore our courses and start learning today!</p>
+            <a href="#courses" class="btn btn-light btn-lg">View Courses</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">EduLearn is a leading platform providing high-quality education in various fields.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container my-5">
+        <h2 class="text-center">Our Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="image a.jpg" class="card-img-top img-fluid" alt="Web Development">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Learn HTML, CSS, JavaScript, and build amazing websites.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="images a2..jpg" class="card-img-top img-fluid" alt="Data Science">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">Master Python, Machine Learning, and Data Analytics.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+    <div class="col-md-4">
+        <div class="card shadow">
+            <img src="image a3.jpg" class="card-img-top img-fluid" alt="Graphic Design">
+            
+            <div class="card-body">
+                <h5 class="card-title">Graphic Design</h5>
+                <p class="card-text">Design stunning visuals using Photoshop and Illustrator.</p>
+                <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="container my-5">
+        <h2 class="text-center">Our Faculty</h2>
+        <p class="text-center">Meet our experienced and dedicated faculty members.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </section>
+ <!-- Login Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Create a password">
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2025 EduLearn. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

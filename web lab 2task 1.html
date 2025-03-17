@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="reglogstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="firstName" required><br>
+
+            <label>Last Name:</label>
+            <input type="text" name="lastName" required><br>
+
+            <label>City:</label>
+            <input type="text" name="city" value="Your City" readonly required><br>
+
+            <label>Zip Code:</label>
+            <input type="text" name="zipCode" maxlength="4" required><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>v
+</body>
+</html>
