@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 - Add New Class</title>
+  <style>
+    /* Initial CSS class */
+    .firstStyle {
+      color: blue;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    /* New class to be appended */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="styledPara" class="firstStyle">This is a paragraph with the first class style.</p>
+
+  <script>
+    // Access the <p> element by its ID
+    const para = document.getElementById("styledPara");
+
+    // Append the new class 'highlight' to the existing classes
+    para.classList.add("highlight");
+
+    // Optionally, log to confirm class is added
+    console.log(para.className); // It should now contain both 'firstStyle' and 'highlight'
+  </script>
+
+</body>
+</html>
